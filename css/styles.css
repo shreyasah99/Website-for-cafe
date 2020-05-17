@@ -1,0 +1,382 @@
+body{
+  font-family: 'Montserrat-Black', sans-serif;
+
+}
+
+
+h1{
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  word-spacing: 25px;
+  
+}
+
+h2{
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  word-spacing: 3px;
+
+
+
+}
+
+h3{
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.5rem;
+  
+}
+
+p{
+  color: #1f5f8b;
+
+}
+
+/* navigation bar */
+
+#navigationbar{
+  background-color:   #1a2849 ;
+padding:  2% 12% 15%;
+  color: #fff ;
+
+}
+
+.container-fluid{
+  padding: 3% 15% 1%;
+
+}
+
+.navbar{
+  padding: 0 0 2.5rem;
+
+}
+
+.navbar-brand{
+  font-family: 'Courgette', cursive;
+
+  font-size: 2rem;
+  font-style: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat:Light"
+}
+
+.titleh1{
+  margin: 13% 3% 5% 3% ;
+  font-size: 3rem;
+  
+ 
+}
+
+
+/* download buttons */
+.btn{
+  margin: 7% 3% 2% 4%;
+}
+
+/* titleimage */
+.title-image{
+  width:55% ;
+  height: 200% ;
+  transform: rotate(30deg);
+  position: absolute;
+  right: 25%;
+
+}
+
+/* features section */
+#features{
+  padding: 7% 15% 3%;
+  position:relative ;
+ background-color: #fff;
+}
+
+
+.feature-box{
+  text-align: center;
+  color: #111d5e;
+  padding: 5%;
+}
+
+
+.icon{
+  color:  #1f5f8b ;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  color: #1a2849;
+}
+
+
+
+  /* slider */
+  #slider{
+    background-color:  #1f5f8b;
+    color: #fff;
+    text-align: center;
+  }
+  .w{
+    padding-left: 10px;
+    padding-top: 15px;
+    height: 320px;
+    width:  320px;
+  }
+
+  .carousel-item{
+    padding:  4% 15%;
+  }
+
+  .testimonials-image{
+    margin: 20px;
+  }
+
+  .testimonial-text{
+    padding-bottom: 10px;
+  }
+
+
+/* about us */
+
+#aboutus{
+  background-color: #fff;
+  padding: 5% 7% 5%;
+
+}
+
+.about1{
+  padding: 1% 6% 3%;
+  
+}
+
+.about2{
+  padding: 2% 5% ;
+}
+
+.about3{
+  padding: 3% 30% 3% 30%;
+  position: inline;
+}
+
+.about4{
+  width: 70%;
+  text-align: left;
+  margin-left: 85px;
+}
+
+.about5{
+  color: #1a2849;
+  font-size: 55px;
+}
+
+.myButton {
+	box-shadow: 4px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #1b6fc2 100%);
+	background-color:#79bbff;
+	border-radius:20px;
+	border:3px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:10px 6px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #1b6fc2 5%, #79bbff 100%);
+	background-color:#1b6fc2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* services */
+
+#services{
+  padding: 50px 100px 1px;
+  text-align: center;
+
+}
+
+.services-column{
+  padding: 3% 2% ;
+}
+
+.services1{
+  color: #111d5e;
+}
+
+.services3{
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 300px;
+  width:  300px;
+}
+
+/* our team */
+
+#ourteam{
+  background-color: #fff;
+ 
+  padding: 3% 10%;
+}
+
+.o4{
+  padding: 2.5% 6% 2%;
+  text-align: center;
+}
+
+.o1{
+  height: 270px;
+  width:  400px;
+}
+.o2{
+  color: #222831;
+}
+.o3{
+  padding: 3% 0% ;
+  color: #1f5f8b;
+}
+
+/* footer */
+
+#footer{
+
+  padding: 5% 15% ;
+  text-align: center;
+  background-color:  #1f5f8b;
+
+}
+
+.a{
+  margin: 10px 15px;
+  color: white;
+}
+
+/* responsive website using css */
+
+@media (max-width:1028px) {
+
+#title{
+  text-align: center;
+}
+
+.title-image{
+  position: static;
+  transform: rotate(0);
+}
+}
+
+
+/* about us page */
+
+#navigation{
+  background-color:   #1a2849 ;
+  padding: 0.5% 8%;
+  color: #fff ;
+
+}
+
+#aboutteam{
+  background-color: white;
+
+}
+.a1{
+  padding: 1% 15% 1%;
+
+}
+
+.a2{
+  text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 0.3%;
+  font-family: 'Girassol', cursive;
+}
+
+.a3{
+  padding: 2% 10%;
+}
+
+.a4{
+  height: 320px;
+  width: 470px;
+  margin-left: 60px;;
+}
+
+.a5{
+ padding: 3% 1%;
+ 
+}
+
+.a6{
+  height: 320px;
+  width: 470px;
+  margin-right: 65px;
+}
+
+.a7{
+  width: 85%;
+  padding-top: 2%;
+}
+
+.a9{
+  font-family: 'Girassol', cursive;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+
+.a10{
+ 
+
+  padding-top: 4%;
+  padding-bottom: 7%;
+  height: 330px;
+  width: 20px;
+}
+
+.a11{
+  text-align: center;
+}
+
+.a12{
+  padding: 0% 10%;
+}
+
+
+
+.imgser{
+  width: 300px;
+  height: 300px;
+}
+
+
+  /* SERVICES  PAGE  */
+
+  .s1{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 0.3%;
+    font-family: 'Girassol', cursive;
+  }
+
+  /* gallery */
+
+  .g1{
+    color: red;
+    padding: 20% 25%;
+  }

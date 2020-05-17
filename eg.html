@@ -1,0 +1,66 @@
+
+<?php
+$name = filter_input(INPUT_POST, 'name');
+$email = filter_input(INPUT_POST, 'email');
+$pno = filter_input(INPUT_POST, 'pno');
+$feedback = filter_input(INPUT_POST, 'feedback');
+if (!empty($name)){
+if (!empty($email)){
+$host = "localhost";
+$dbusername = "root";
+$dbpassword = "";
+$dbname = "hii";
+// Create connection
+$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+if (mysqli_connect_error()){
+die('Connect Error ('. mysqli_connect_errno() .') '
+. mysqli_connect_error());
+}
+else{
+$sql = "INSERT INTO hey (name,email,pno,feedback)
+values ('$name','$email','$pno','$feedback')";
+if ($conn->query($sql)){
+echo "New record is inserted sucessfully";
+}
+else{
+echo "Error: ". $sql ."
+". $conn->error;
+}
+$conn->close();
+}
+}
+else{
+echo "Password should not be empty";
+die();
+}
+}
+else{
+echo "Username should not be empty";
+die();
+}
+?>
+
+
+
+<?php
+
+$pdo=new pdo('mysql:host=localhost',' dbname=hii','root','');
+session_start();
+
+$name= $_POST['name'];
+$email= $_POST['email'];
+$pno= $_POST['pno'];
+$feedback= $_POST['feedback'];
+
+$insert=$pdo->prepare(insert into hey(name,email,pno,feedback) values(:name,:email,:pno,:feedback));
+
+$insert->bindParam(':name',$name);
+$insert->bindParam(':email',$email);
+$insert->bindParam(':pno',$pno);
+$insert->bindParam(':feedback',$feedback);
+
+$insert -> execute();
+
+header('location:contact.html')
+
+?>
